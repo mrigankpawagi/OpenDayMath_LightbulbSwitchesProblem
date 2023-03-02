@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Lato:wght@900&family=Montserrat:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    background-color: #4CAF50;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+#grid{
+    width: calc(100vh - 50px);
+    height: calc(100vh - 50px);
+}
+.bulb{
+    width: calc(10% - 10px);
+    height: calc(10% - 10px);
+    background-size: cover;
+    float: left;
+    margin: 5px;
+}
+.bulb.off{
+    background-image: url("off.png");
+}
+.bulb.on{
+    background-image: url("on.png");
+}
+
+#counter{
+    width: calc(50vh - 25px);
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-wrap {
+  width: 90%;
+  padding-bottom: 90%;
+  background: conic-gradient(#fff 3.6deg, transparent 3.6deg);
+  border-radius: 50%;
+  position: relative;
+  outline: 1px solid white;
+}
+.circle{
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    outline: 1px solid white;
+    background: #4CAF50;
+    border-radius: 50%;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+}
+footer{
+    background-color: #333333;
+    text-align: center;
+    padding: 10px 0;
+}
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
