@@ -2,6 +2,10 @@
 <html>
   <head>
     <title>Lightbulb Switching Problem</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -9,10 +13,31 @@
       <div id="grid"></div>
       <div id="counter">
         <div class="circle-wrap">
-            <div class="circle">
-                <div id="number">1</div>
-            </div>
+          <div class="circle">
+            <button id="up">
+              <span class="material-symbols-outlined"> expand_less </span>
+            </button>
+            <div id="number">0</div>
+            <button id="down">
+              <span class="material-symbols-outlined"> expand_more </span>
+            </button>
           </div>
+        </div>
+        <div id="controls">
+          <button id="play">
+            <span class="material-symbols-outlined"> play_arrow </span>
+          </button>
+          <button id="replay">
+            <span class="material-symbols-outlined"> replay </span>
+          </button>
+          <button id="end">
+            <span class="material-symbols-outlined"> fast_forward </span>
+          </button>
+          <br />
+          <button id="pause">
+            <span class="material-symbols-outlined"> pause </span>
+          </button>
+        </div>
       </div>
     </main>
     <footer>

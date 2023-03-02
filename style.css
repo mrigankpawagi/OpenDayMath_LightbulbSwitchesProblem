@@ -36,11 +36,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 .circle-wrap {
   width: 90%;
   padding-bottom: 90%;
-  background: conic-gradient(#fff 3.6deg, transparent 3.6deg);
+  background: conic-gradient(#fff 0deg, transparent 0deg);
   border-radius: 50%;
   position: relative;
   outline: 1px solid white;
@@ -55,6 +56,7 @@ main{
     left: 25px;
     top: 25px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -69,4 +71,19 @@ footer{
 footer a{
     color: #fff;
     text-decoration: none;
+}
+#counter button{
+    background: transparent;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+}
+#controls{
+    text-align: center;
+    margin-top: 20px;
+}
+#controls button{
+    margin: 0 20px;
+    font-size: 3em;
 }
